@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MMD County CSV Downloader</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>MMD County CSV Downloader</h1>
+      <p class="subtitle">
+        Download county-level combined CSV data from the CMS Mapping Medicare
+        Disparities endpoint.
+      </p>
+
+      <section class="card">
+        <form id="download-form">
+          <label>
+            State
+            <select id="state" required></select>
+          </label>
+
+          <label>
+            Year
+            <select id="year" required></select>
+          </label>
+
+          <label>
+            Measure
+            <select id="measure" required></select>
+          </label>
+
+          <label>
+            Adjustment
+            <select id="adjustment" required>
+              <option value="1">Unsmoothed actual</option>
+              <option value="2">Unsmoothed age adjusted</option>
+            </select>
+          </label>
+
+          <label>
+            Condition / Service
+            <select id="condition" required></select>
+          </label>
+
+          <button id="download-btn" type="submit">Download Combined CSV</button>
+        </form>
+      </section>
+
+      <section class="card status-card">
+        <h2>Status</h2>
+        <pre id="status">Initializing...</pre>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

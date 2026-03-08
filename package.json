@@ -1,0 +1,10 @@
+{
+  "name": "mmd-downloader-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "update-assets": "./scripts/update_assets.sh"
+  }
+}
