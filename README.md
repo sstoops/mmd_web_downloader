@@ -2,6 +2,11 @@
 
 Standalone vanilla JavaScript web app that downloads county-level MMD data from CMS and exports a combined CSV.
 
+## Links
+
+- **Live App (GitHub Pages):** [https://sstoops.github.io/mmd_web_downloader/](https://sstoops.github.io/mmd_web_downloader/)
+- **Source Repository:** [https://github.com/sstoops/mmd_web_downloader](https://github.com/sstoops/mmd_web_downloader)
+
 ## Features
 
 - Separate project/repo from the Python downloader.
